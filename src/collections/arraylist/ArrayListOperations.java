@@ -2,6 +2,7 @@ package collections.arraylist;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class ArrayListOperations {
 
@@ -65,6 +66,17 @@ public class ArrayListOperations {
 
         System.out.println("After removal, the list is: " + al);
 
+        System.out.println("Creating a sublist from the existing ArrayList using subList() method");
+
+        List<String> subList = al.subList(0, 2);
+
+        System.out.println("The sublist is: " + subList);
+
+        System.out.println("Setting some value to the first element in the sublist using set() method.");
+
+        subList.set(0, "ChocoLava");
+
+        System.out.println("Changed sublist is: " + subList);
     }
 
 }

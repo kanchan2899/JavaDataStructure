@@ -21,7 +21,13 @@ public class VectorEnsureCapacity {
         vector.ensureCapacity(10);
         System.out.println("Vector capacity after reinitialize it to 10: " + vector.capacity());
 
-        System.out.println(vector);
+        System.out.println("Vector contents" + vector);
+
+        System.out.println("Trimming the vector using trimToSize() method");
+
+        vector.trimToSize();
+
+        System.out.println("Capacity after trimming: " + vector.capacity());
 
     }
 
