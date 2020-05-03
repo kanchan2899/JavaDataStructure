@@ -32,5 +32,13 @@ public class CollectionsAndArrayList {
         Collections.swap(arrayList, 0, 1);
 
         System.out.println("After swap, the list is: " + arrayList);
+
+        System.out.println("Sort the elements in the ArrayList using Collections.sort(al) method.");
+
+        System.out.println(arrayList);
+
+        Collections.sort(arrayList);
+
+        System.out.println("After sort, the list is: " + arrayList);
     }
 }
